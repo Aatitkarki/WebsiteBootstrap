@@ -5,114 +5,83 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Home - Brand</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
     <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
-    <link rel="stylesheet" href="/assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700">
+    <link rel="stylesheet" href="/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
 </head>
 
-<body>
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
-        <div class="container"><a class="navbar-brand logo" href="#">Suresh Karki</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse"
-                id="navbarNav">
+<body id="page-top">
+    <nav class="navbar navbar-light navbar-expand-md navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container"><a class="navbar-brand js-scroll-trigger" href="#">Suresh Karki</a><button data-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation" value="Menu"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="/index.html">Home</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="/projects-grid-cards.html">Projects</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="/cv.html">CV</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="/hire-me.html">Hire me</a></li>
+                    <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link active js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link js-scroll-trigger" href="#download">Services</a></li>
+                    <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link stretched-link js-scroll-trigger" href="#contact">contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <main class="page lanidng-page">
-        <section class="portfolio-block block-intro">
-            <div class="container"><div class="avatar" style="background-image:url('/assets/img/avatars/mypic.png');"></div>
-                <div class="about-me">
-                    <p>Hello! I am <strong>Suresh Karki</strong>. I am a Student at ithari international college. I have passion for Android development, Web development and Software development.</p><a class="btn btn-outline-primary" role="button" href="#">Hire me</a></div>
-            </div>
-        </section>
-        <section class="portfolio-block photography">
+    <header class="masthead" style="background-image:url('/assets/img/intro-bg.jpg');">
+        <div class="intro-body">
             <div class="container">
-                <div class="row no-gutters">
-                    <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="#"><img class="img-fluid image" src="/assets/img/nature/image5.jpg"></a></div>
-                    <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="#"><img class="img-fluid image" src="/assets/img/nature/image2.jpg"></a></div>
-                    <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="#"><img class="img-fluid image" src="/assets/img/tech/image4.jpg"></a></div>
-                </div>
-            </div>
-        </section>
-        <section class="portfolio-block call-to-action border-bottom">
-            <div class="container">
-                <div class="d-flex justify-content-center align-items-center content">
-                    <h3>Want a person to make like this!</h3><button class="btn btn-outline-primary btn-lg" type="button">Hire me</button></div>
-            </div>
-        </section>
-        <section class="portfolio-block skills">
-            <div class="container">
-                <div class="heading">
-                    <h2>Special Skills</h2>
-                </div>
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="card special-skill-item border-0">
-                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-star-outline"></i></div>
-                            <div class="card-body">
-                                <h3 class="card-title">Web Design</h3>
-                                <p class="card-text">I am a&nbsp;</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card special-skill-item border-0">
-                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-lightbulb-outline"></i></div>
-                            <div class="card-body">
-                                <h3 class="card-title">Interface Design</h3>
-                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card special-skill-item border-0">
-                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-gear-outline"></i></div>
-                            <div class="card-body">
-                                <h3 class="card-title">Photography and Print</h3>
-                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="brand-heading">HI !</h2>
+                        <p class="intro-text">I am student of Itahari International College. I am currently studying Bsc. hons Computing. I like to work on web, android and software developmennt.</p><a class="btn btn-link btn-circle" role="button" href="#about"><i class="fa fa-angle-double-down animated" data-aos="zoom-out" data-aos-once="true"></i></a></div>
                 </div>
             </div>
-        </section>
-    </main>
-    <section class="portfolio-block website gradient">
+        </div>
+    </header>
+    <section id="about" class="content-section text-center">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-12 col-lg-5 offset-lg-1 text">
-                    <h3>Website Project</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget velit ultricies, feugiat est sed, efr nunc, vivamus vel accumsan dui. Quisque ac dolor cursus, volutpat nisl vel, porttitor eros.</p>
-                </div>
-                <div class="col-md-12 col-lg-5">
-                    <div class="portfolio-laptop-mockup">
-                        <div class="screen">
-                            <div class="screen-content" style="background-image:url(&quot;/assets/img/tech/image6.png&quot;);"></div>
-                        </div>
-                        <div class="keyboard"></div>
-                    </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>About MYSELF</h2>
+                    <p><br><strong>I am a undergraduate student of BSc.Hons Computing at Ithari International College. I have a deep interest towards computer science.</strong><br></p>
+                    <p><strong>I want to develop my career as a Software Developer. I am a hard worker and quick learner.</strong><br></p>
+                    <p>Till now i am working on my own project of creating android/ios apps. Creating website for own. I am avilable as a freelancer to work.</p>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="page-footer">
+    <section id="download" class="download-section content-section text-center" style="background-image:url('/assets/img/downloads-bg.jpg');">
         <div class="container">
-            <div class="links"><a href="#">About me</a><a href="#">Contact me</a><a href="#">Projects</a></div>
-            <div class="social-icons"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-instagram-outline"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a></div>
+            <div class="col-lg-8 mx-auto">
+                <h1>Download FULL cv</h1>
+                <p>You can download my full CV if you want to learn more about me.</p><button class="btn btn-primary btn-lg btn-default" type="button">visit download page</button></div>
+        </div>
+    </section>
+    <section id="contact" class="content-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Contact ME</h2>
+                    <p>Feel free to contact me. I am avilable as a freelancer any time. If You have any suggestion then you can leave a message too. For business purposes contact me at aatitkarki12345@gmail.com.</p>
+                    <ul class="text-center list-inline banner-social-buttons">
+                        <li class="list-inline-item">&nbsp;<button class="btn btn-primary btn-lg btn-default" type="button"><i class="fa fa-facebook fa-fw"></i><span class="text-lowercase network-name">&nbsp; Facebook</span></button></li>
+                        <li class="list-inline-item">&nbsp;<button class="btn btn-primary btn-lg btn-default" type="button"><i class="fa fa-instagram fa-fw"></i><span class="text-lowercase text-justify network-name">&nbsp;Instagram</span></button></li>
+                        <li class="list-inline-item">&nbsp;<button class="btn btn-primary btn-lg text-center btn-default" type="button"><i class="fa fa-github fa-fw"></i><span class="text-lowercase network-name">github</span></button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="map-clean"><iframe allowfullscreen="" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=+&amp;q=Paris%2C+France&amp;zoom=15" width="100%" height="450"></iframe></div>
+    <footer>
+        <div class="container text-center">
+            <p>Copyright © Suresh Karki 2019</p>
         </div>
     </footer>
     <script src="/assets/js/jquery.min.js"></script>
     <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
-    <script src="/assets/js/theme.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="/assets/js/grayscale.js"></script>
+    <script src="/assets/js/bs-animation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
 </body>
 
 </html>

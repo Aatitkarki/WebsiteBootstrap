@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Suresh Karki
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Scrolling navigation  -->
+    <script src="https://unpkg.com/scrollnav@3.0.1/dist/scrollnav.min.umd.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- titillium font -->
+    <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre&display=swap" rel="stylesheet">
+    <!-- oswa font -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap" rel="stylesheet">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .zoom {
+            width: 100%;
+            height: 1000px;
+            position: relative;
+            overflow: hidden;
+            background: url("image/back/bg.jpg");
+            background-size: cover;
+        }
+        
+        .zoom:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 150px;
+            z-index: 1000;
+            background: linear-gradient(transparent, #fff);
+        }
+        
+        .zoom #layer1 {
+            position: absolute;
+            left: 40%;
+            width: 100%;
+            transform: translateX(-50%);
+            z-index: 5;
+        }
+        
+        .zoom #layer2 {
+            position: absolute;
+            right: 0;
+            width: 100%;
+            z-index: 8;
+        }
+        
+        .zoom #text {
+            position: absolute;
+            right: 0;
+            width: 100%;
+            transform: translateY(60%);
+        }
+        
+        .content {
+            margin: 0px 20px 20px 20px;
+        }
+        
+        #Portfolio {
+            background: url("image/back/2.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        
+        #ContactUs {
+            background: url("image/back/pen.jpg") no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            height: 700px;
+        }
+        
+        #Services {
+            background: url("image/image3.jpg") no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            height: 700PX;
+        }
+        /*glowing text for button*/
+        
+        .glow {
+            margin: 10px 0 10px 0;
+            background-color: #EC0043;
+            border-radius: 15px;
+            border: none;
+            color: #eeeeee;
+            cursor: pointer;
+            display: inline-block;
+            font-family: sans-serif;
+            font-size: 20px;
+            padding: 10px 10px;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        @keyframes glowing {
+            0% {
+                background-color: #EE0F29;
+                box-shadow: 0 0 5px #EE0F29;
+            }
+            50% {
+                background-color: #E81998;
+                box-shadow: 0 0 20px #49e819;
+            }
+            100% {
+                background-color: #A8058B;
+                box-shadow: 0 0 5px #2ba805;
+            }
+        }
+        
+        .glow {
+            animation: glowing 1300ms infinite;
+        }
+        
+        nav .navbar-brand,
+        nav a {
+            font-size: 25px;
+            color: #E81998 !important;
+        }
+        
+        .active {
+            border-bottom: 2px solid rgb(20, 255, 12);
+            color: rgb(91, 2, 255) !important;
+            font-weight: 600;
+        }
+        
+        nav a:hover {
+            color: rgb(91, 2, 255) !important;
+        }
+        
+        .font-robo {
+            font-family: 'Roboto', sans-serif;
+            color: #FAEFEF;
+        }
+    </style>
+
+    <script>
+        // Script for Navigation bar colour change
+        // $(window).on('scroll', function() {
+        //     if ($(window).scrollTop()) {
+        //         $('nav').addClass('bg-dark');
+        //     } else {
+        //         $('nav').removeClass('bg-dark');
+        //     }
+        // })
+    </script>
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <!-- navigation bar of the website -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <span class="navbar-brand text-dark font-weight-bold">Suresh Karki</span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#Welcome">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#Portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#Services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#ContactUs">
+                              Contact Us
+                          </a>
+                    </li>
+
+
+
+                </ul>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <section class="zoom" id="Welcome" class="section">
+        <img src="image/back/mountain1.png" id="layer1">
+        <img src="image/back/mountain2.png" id="layer2">
+        <img src="image/back/sk.png" id="text">
+
+        <script>
+            var layer1 = document.getElementById("layer1")
+            scroll = window.pageYOffset;
+            document.addEventListener("scroll", function(e) {
+                var offset = window.pageYOffset;
+                scroll = offset;
+                layer1.style.width = (100 + scroll / 5) + '%'
+            })
+
+            var layer2 = document.getElementById("layer2")
+            scroll = window.pageYOffset;
+            document.addEventListener("scroll", function(e) {
+                var offset = window.pageYOffset;
+                scroll = offset;
+                layer2.style.width = (100 + scroll / 5) + '%';
+                layer2.style.left = scroll / 50 + '%'
+            })
+
+
+            var text = document.getElementById("text")
+            scroll = window.pageYOffset;
+            document.addEventListener("scroll", function(e) {
+                var offset = window.pageYOffset;
+                scroll = offset;
+                layer2.style.width = (100 + scroll / 5) + '%';
+                text.style.top = -scroll / 20 + '%'
+            })
+        </script>
+    </section>
+
+    <section id="Portfolio" class="section">
+        <div class="container">
+            <div id="profile">
+                <div id="name">
+                    <div id="photo">
+                        <img src="image/back/suresh.jpg" height="250px">
+                    </div>
+                    <h1>Suresh Karki</h1>
+                    <h3>Programmer/Web Designer</h3>
+                    <br>
+                    <p>I am a undergraduate student of BSc.Hons Computing at Ithari International College. I have a deep interest towards computer science. I want to develop my career as a Software Developer. I am a hard worker and quick learner. Till now
+                        i am working on my own project of creating android/ios apps. Creating website for own. I am avilable as a freelancer to work.</p>
+                </div>
+                <ul class="personal-info">
+                    <li>
+                        <label>Name:</label><span>Suresh Karki</span></li>
+                    <li>
+                        <label>Birthday:</label><span>28 January 2001</span></li>
+                    <li>
+                        <label>Address:</label><span>Gaighat Udayapur</span></li>
+                    <li>
+                        <label>Email:</label><span>aatitkarki12345@gmail.com</span></li>
+                    <li>
+                        <label>Phone:</label><span>9824785214</span></li>
+                    <li>
+                        <label>Website:</label><span>sureshk.com.np</span> </li>
+                </ul>
+            </div>
+            <nav class="menu">
+                <ul class="tabs">
+                    <li>
+                        <a href="" class="tab-profile"></a>
+
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- <h1 class="text-center text-capitalize pt-3 font-weight-bold">
+            About Myself
+        </h1>
+        <hr class="w-25 h-25 mx-auto pt-3 mb-2">
+        <div>
+            <img src="image/back/suresh.jpg" height="200px" width="auto" class="mx-auto d-block" style="margin-top: 0px;border-radius: 15px;">
+        </div>
+
+        <div class="container-fluid text-center h3 text-danger">
+            <p>I am a undergraduate student of BSc.Hons Computing at Ithari International College. I have a deep interest towards computer science.</p>
+
+            <p> I want to develop my career as a Software Developer. I am a hard worker and quick learner.</p>
+
+            <p>Till now i am working on my own project of creating android/ios apps. Creating website for own. I am avilable as a freelancer to work.</p>
+        </div>
+        <div class="container-fluid text-center text-danger">
+            <span class="text-warning">If you want to know more about me, then Download my Full CV</span><br>
+            <a href="cv.docx" download="newimage"><button class="glow">
+                    Download
+                </button></a>
+        </div>
+
+        </div> -->
+    </section>
+    <section id="Services" class="section">
+        <div class="container text-center pt-4 " style="height: 700px;">
+            <span class="h1 font-weight-bold ">Services</span>
+            <hr class="w-25">
+        </div>
+    </section>
+    <section id="ContactUs" class="section">
+        <div class="container text-center pt-4 ">
+            <span class="h1 font-weight-bold "> Contact Us</span>
+            <hr class="w-25">
+        </div>
+        <div class="container row">
+            <div class=" col-6">
+                <form class="font-robo" name="contactform" onsubmit="formsubmittion()" class="font-weight-bold">
+                    <div class="form-group">
+                        <label for="fullname">Name</label><br>
+                        <input type="text" name="fname" class="form-control"><br>
+                        <label for="address">Address</label><br>
+                        <input type="text" name="fname" class="form-control"><br>
+                        <label for="fullname">Gender</label><br>
+                        <input type="radio" name="gender" value="Male" checked>Male
+                        <input type="radio" name="gender" value="Female">Female
+                        <input type="radio" name="gender" value="Other">Other<br><br>
+                        <label for="email"></label>Email<br>
+                        <input type="email" name="email" class="form-control">
+                        <input type="submit" name="submit">
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- font awesome icons script -->
+    <script src="https://kit.fontawesome.com/08ed3fc880.js" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- navigation on scroll effect -->
+    <script src="js/slideNav.js" type="text/javascript"></script>
+    <script>
+        window.slide = new SlideNav({
+            changeHash: true,
+            activeClass: "active",
+            speed: 70,
+        });
+    </script>
+
+</body>
+
+</html>
